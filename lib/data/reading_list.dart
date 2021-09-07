@@ -22,7 +22,7 @@ List<Article> readingList = [
       sources: "medium.com",
       imageUrl: "assets/images/peoplediscuss.jpg",
       date: "July 31,2021",
-      numArticles: 09,
+      numArticles: 9,
       contents:
           "When we tell stories about ourselves, they also serve another important (arguably higher) function: They help us to believe our lives are meaningful. “The storytelling mind”—the human mind, in other words—”is allergic to uncertainty, randomness, and coincidence,” Gottschall writes. It doesn’t like to believe life is accidental; it wants to believe everything happens for a reason. Stories allow us to impose order on the chaos.And we all concoct stories, Gotschall notes—even those of us who have never commanded the attention of a room full of people while telling a wild tale. “[S]ocial psychologists point out that when we meet a friend, our conversation mostly consists of an exchange of gossipy stories,” he writes. “And every night, we reconvene with our loved ones … to share the small comedies and tragedies of our day.”"),
 ];

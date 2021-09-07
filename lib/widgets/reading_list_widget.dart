@@ -24,47 +24,50 @@ class ReadingListWidget extends StatelessWidget {
           Flexible(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    children: [
-                      Text(
-                        "medium.com",
-                        style: TextStyle(
-                          fontSize: 14.0,
-                          color: Colors.blueGrey[300],
-                        ),
-                      ),
-                      SizedBox(width: 15.0),
-                      Container(
-                        margin: EdgeInsets.only(top: 2.0),
-                        width: 52.0,
-                        height: 22.0,
-                        alignment: Alignment.center,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.lightBlue[50],
-                        ),
-                        child: Text(
-                          '3 pages',
+              child: Container(
+                height: 140.0,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          "medium.com",
                           style: TextStyle(
-                            fontSize: 12.0,
-                            color: Colors.blue[500],
+                            fontSize: 14.0,
+                            color: Colors.blueGrey[300],
                           ),
                         ),
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 10.0),
-                  Text(
-                    article.title,
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.w500,
+                        SizedBox(width: 9.0),
+                        Container(
+                          margin: EdgeInsets.only(top: 2.0),
+                          width: 60.0,
+                          height: 22.0,
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Colors.lightBlue[50],
+                          ),
+                          child: Text(
+                            "${article.numArticles} pages",
+                            style: TextStyle(
+                              fontSize: 12.0,
+                              color: Colors.blue[500],
+                            ),
+                          ),
+                        ),
+                      ],
                     ),
-                  ),
-                ],
+                    SizedBox(height: 10.0),
+                    Text(
+                      article.title,
+                      style: TextStyle(
+                        fontSize: 17.0,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ),
           ),
@@ -72,18 +75,6 @@ class ReadingListWidget extends StatelessWidget {
       ),
     );
   }
-
-  // _handleTap(BuildContext context, Article article) {
-  //   Navigator.of(context).push(
-  //     MaterialPageRoute<void>(
-  //       builder: (_) {
-  //         return Scaffold(
-  //           body: Text('hello'),
-  //         );
-  //       },
-  //     ),
-  //   );
-  // }
 
   @override
   Widget build(BuildContext context) {

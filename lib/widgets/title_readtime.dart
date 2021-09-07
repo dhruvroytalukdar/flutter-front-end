@@ -12,7 +12,7 @@ class TitleReadTimeWidget extends StatelessWidget {
         Text(
           "Instapaper",
           style: TextStyle(
-            fontSize: 40.0,
+            fontSize: 35.0,
             fontWeight: FontWeight.bold,
             letterSpacing: 1.0,
           ),
@@ -25,7 +25,7 @@ class TitleReadTimeWidget extends StatelessWidget {
             Text(
               "Today's Reading",
               style: TextStyle(
-                  fontSize: 15.0,
+                  fontSize: 14.0,
                   fontWeight: FontWeight.w500,
                   letterSpacing: 1.2,
                   color: Colors.blueGrey[300]),
@@ -35,7 +35,7 @@ class TitleReadTimeWidget extends StatelessWidget {
             ),
             Text(
               currentUser.timeReading + " left",
-              style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 14.0, fontWeight: FontWeight.bold),
             ),
           ],
         ),

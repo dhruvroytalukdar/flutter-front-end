@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Instapaper',
       theme: ThemeData(
+        fontFamily: 'Poppins',
         primaryColor: Colors.white,
       ),
       debugShowCheckedModeBanner: false,

@@ -14,25 +14,28 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(
-        child: ListView(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 20.0, right: 20.0, top: 45.0, bottom: 0.0),
-              child: Column(
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [TitleReadTimeWidget(), UserAvatarWidget()],
-                  ),
-                  SizedBox(height: 30.0),
-                  SearchFieldWidget(),
-                  PopularListWidget(),
-                  ReadingListWidget(),
-                ],
+        child: GestureDetector(
+          onTap: () => FocusScope.of(context).unfocus(),
+          child: ListView(
+            children: [
+              Padding(
+                padding: const EdgeInsets.only(
+                    left: 20.0, right: 20.0, top: 45.0, bottom: 0.0),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [TitleReadTimeWidget(), UserAvatarWidget()],
+                    ),
+                    SizedBox(height: 30.0),
+                    SearchFieldWidget(),
+                    PopularListWidget(),
+                    ReadingListWidget(),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
